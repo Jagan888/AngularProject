@@ -9,13 +9,18 @@ import{ MatIconModule} from '@angular/material/icon';
 import{MatSelectModule} from '@angular/material/select'
 import { ProjectsComponent } from './projects/projects.component';
 import { SddFooterComponent } from './sdd-footer/sdd-footer.component';
+import {MatCardModule} from '@angular/material/card';
+import { ProjectCardsComponent } from './project-cards/project-cards.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     ProjectsComponent,
-    SddFooterComponent
+    SddFooterComponent,
+    ProjectCardsComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +28,9 @@ import { SddFooterComponent } from './sdd-footer/sdd-footer.component';
     MatToolbarModule,
     MatIconModule,
     MatSelectModule,
+    MatCardModule,
+    MatButtonModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
