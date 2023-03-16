@@ -1,0 +1,44 @@
+.project_div{
+  //width: 1280px;
+  height: 120px;
+  left:0px;
+  top:0px;
+  background-color: rgb(29, 27, 27);
+  display:inline-block;
+  width: 100%;
+}
+
+.parent_div{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h3{
+  width: 130px;
+  height: 48px;
+  top: 82px;
+  left: 64px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+  // position: relative;
+  font-style:normal ;
+  padding-left: 40px;
+}
+
+.sort{
+  width: 332px;
+  height: 40px;
+  top:88px;
+  left: 609px;
+  radius: 2px;
+  color: #454443;
+  margin: 50px;
+
+}
+
+.row{
+  flex:auto;
+}
+
