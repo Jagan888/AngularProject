@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 // import { MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSelectModule,
     MatCardModule,
     FlexLayoutModule,
-
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

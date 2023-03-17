@@ -1,65 +1,57 @@
-.mat-form-field{
-  width: 350px;
-  height: 70px;
-   // background-color: #5f5c5c;
+// .mat-form-field{
+//   width: 350px;
+//   height: 70px;
+//    // background-color: #5f5c5c;
+// }
 
-}
-
-
-
-// ::ng-deep .mat-form-field .mat-form-field {
-//     background-color: #464444;
-//   }
-
-
-
-.sort-label-1{
-  color: #5f5c5c;
-}
-.sort-label-2{
+.sort-label-1 {
   color: #f1eeee;
 }
-.mat-mdc-text-field-wrapper{
-padding-top: 20px;
-padding: 20px;
+.sort-label-2 {
+  color: #f1eeee;
 }
-.search-icon{
+
+.search-icon {
   color: #ffffff;
 }
-.filter-icon{
+.filter-icon {
   color: #ffffff;
 }
-.filter-button{
+.filter-button {
   background-color: #5f5c5c;
+  height: 50px;
 }
-.search-button{
+.search-button {
   background-color: #5f5c5c;
+  height: 50px;
 }
-.sort{
-  margin-left: 200px;
-  float: left;
-  margin-top:40px ;
-}
-.search{
-  margin-left: 50px;
-  float: left;
+// .sort {
+//   margin-left: 200px;
+//   float: left;
+//   margin-top: 40px;
+// }
+.search {
   color: #ffffff;
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
 }
-.filter{
-  margin-left: 50px;
-  float: left;
+.filter {
+  float: right;
   color: #ffffff;
+  margin-top: 40px;
+  margin-right: 180px;
 }
-.project_div{
+.project_div {
   //width: 1280px;
   float: left;
   width: 20%;
-// align-items: left;
-margin-left: 60px ;
-// margin-right: 600px;
+  // align-items: left;
+  margin-left: 60px;
+  // margin-right: 600px;
 
-//   left:0px;
-//   top:0px;
+  //   left:0px;
+  //   top:0px;
   // margin-left: 40px;
   // margin-top: 50px;
   // padding-top: 20px;
@@ -69,14 +61,14 @@ margin-left: 60px ;
   //display:inline-block;
 }
 
-.parent_div{
-  margin-left:10px ;
+.parent_div {
+  margin-left: 10px;
   margin-right: 10px;
   // padding-left: 10px;
   // padding-right: 10px;
 }
 
-h3{
+h3 {
   // width: 130px;
   // height: 48px;
   // top: 82px;
@@ -89,7 +81,7 @@ h3{
   // margin-right: 472px;
   line-height: 3;
   // position: relative;
-  font-style:normal ;
+  font-style: normal;
   // padding-left: 40px;
   // margin-top: 30px;
 }
@@ -105,14 +97,33 @@ h3{
 
 // }
 
-.row{
+.row {
   // display: block;
   // flex:auto;
   width: 100%;
   height: 120px;
   margin-top: 0px;
   //  margin-top: 10px;
-    background-color: rgb(29, 27, 27);
+  background-color: rgb(29, 27, 27);
+}
+
+.mat-box-new {
+  margin-right: 20px;
+  float: right;
+  margin-top: 40px;
+}
+
+mat-form-field {
+  width: 350px;
+  height: 70px;
+}
+
+::ng-deep .mat-mdc-form-field-infix {
+  background-color: #5f5c5c;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #5f5c5c;
 }
 
 
