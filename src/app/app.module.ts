@@ -12,7 +12,8 @@ import { SddFooterComponent } from './sdd-footer/sdd-footer.component';
 import {MatCardModule} from '@angular/material/card';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule } from '@angular/material/button';
+// import { MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu'
 
 @NgModule({
   declarations: [
@@ -29,8 +30,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatIconModule,
     MatSelectModule,
     MatCardModule,
-    MatButtonModule,
     FlexLayoutModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
