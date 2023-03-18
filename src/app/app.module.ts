@@ -13,7 +13,14 @@ import {MatCardModule} from '@angular/material/card';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 // import { MatButtonModule} from '@angular/material/button';
-import {MatMenuModule} from '@angular/material/menu'
+import {MatMenuModule} from '@angular/material/menu';
+import { ProjectDetailsComponent } from './project-details/project-details.component'
+
+
+import { FormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,8 @@ import {MatMenuModule} from '@angular/material/menu'
     LayoutComponent,
     ProjectsComponent,
     SddFooterComponent,
-    ProjectCardsComponent
+    ProjectCardsComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +39,12 @@ import {MatMenuModule} from '@angular/material/menu'
     MatSelectModule,
     MatCardModule,
     FlexLayoutModule,
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

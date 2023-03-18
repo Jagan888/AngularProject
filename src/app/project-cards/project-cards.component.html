@@ -1,0 +1,57 @@
+<div id="rectangle" class="rect1">
+  <div class="row">
+    <div class="content">
+      <div class="col-sm-4">
+        <mat-card class="mat-elevation-z4">
+          <div class="row">
+          <label class="data">Data Collect</label>
+          &nbsp;&nbsp;&nbsp;
+          <button
+            mat-icon-button
+            [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with a menu"
+          >
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu class="float-right" #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>file_copy</mat-icon>
+              <span>Copy</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>edit</mat-icon>
+              <span>Edit Project Details</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu>
+        </div>
+          <mat-card-header>
+            <mat-card-title class="ttl1"
+              >Ford Moter company Risk Analysis</mat-card-title
+            >
+
+            <mat-card-subtitle>Client</mat-card-subtitle>
+            <mat-card-subtitle class="ttl1"
+              >Ford Moter Company</mat-card-subtitle
+            >
+          </mat-card-header>
+
+          <mat-card-content>
+            <p>Project Team</p>
+          </mat-card-content>
+
+          <div class="row">
+            <span class="logo">AB</span>
+            <span class="logo">NK</span>
+            <span class="logo">DD</span>
+            <span class="logo">NR</span>
+            <span class="eight"> +8</span>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

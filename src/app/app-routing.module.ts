@@ -5,6 +5,7 @@ import { ProjectsComponent } from './projects/projects.component';
 const routes: Routes = [
   {path:'', pathMatch:'full', redirectTo:'project'},
   {path:'project',component: ProjectsComponent},
+  
 ];
 
 @NgModule({
