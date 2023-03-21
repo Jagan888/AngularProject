@@ -1,0 +1,63 @@
+//close button styles start
+.close-button{
+    float: right;
+    // top:-24px;
+    // right:-24px;
+    top:0px;
+    right:-259px;
+  }
+.h1{
+  margin-right: 20px;
+  padding-right: 60px;
+}
+  .dialog{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .close-icon {
+    transition: 1s ease-in-out;
+  }
+  .close-icon:hover {
+    transform: rotate(180deg);
+  }
+
+  ::ng-deep .icon-outside .close-button{
+    float: right;
+    top:-52px;
+    right:-52px;
+  }
+
+  ::ng-deep .icon-outside .mat-dialog-container {
+  overflow: unset
+  }
+  //close button styles end
+.content{
+    padding-top: 10px;
+}
+.heading{
+
+}
+.row{
+  // position:static;
+  vertical-align: top;
+  // padding-top: 10px;
+    // display: flex;
+    // gap: 10px;
+    // mat-form-field{
+    //     width: 100%;
+    // }
+}
+.action{
+    padding: 0px 25px 20px;
+    border-top: 0.5px solid lightgrey;
+    padding-top: 10px;
+    button{
+        flex: 1;
+    }
+}
+
+.footerbutton{
+    //float: left;
+    margin-right: 317px;
+}
