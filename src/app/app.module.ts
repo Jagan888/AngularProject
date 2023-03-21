@@ -27,6 +27,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { SddAddEditComponent } from './sdd-add-edit/sdd-add-edit.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { AnalysisScopeComponent } from './analysis-scope/analysis-scope.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     SddFooterComponent,
     ProjectCardsComponent,
     ProjectDetailsComponent,
-    SddAddEditComponent
+    SddAddEditComponent,
+    AnalysisScopeComponent
   ],
   imports: [
     BrowserModule,
