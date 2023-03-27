@@ -3,10 +3,11 @@
   background-color: #0a1acf;
   height: 40px;
   color: #f1eeee;
+  margin-top: 40px;
   // margin-right: 20px;
 }
 .add-project{
-  padding-top: 40px;
+  // padding-top: 40px;
   margin-right: 40px;
 }
 
@@ -35,13 +36,13 @@
 .search {
   color: #ffffff;
   float: right;
-  // margin-top: 40px;
+  margin-top: 40px;
   margin-right: 20px;
 }
 .filter {
   float: right;
   color: #ffffff;
-  // margin-top: 40px;
+  margin-top: 40px;
   margin-right: 20px;
 }
 .project_div {
@@ -75,17 +76,28 @@ h3 {
 .mat-box-new {
   margin-right: 20px;
   float: right;
-  // margin-top: 40px;
+  margin-top: 40px;
 }
 
 mat-form-field {
-  width: 350px;
-  height: 70px;
+  width: 380px;
+  height: 60px;
 }
 
+//not required start
 ::ng-deep .mat-mdc-form-field-infix {
   background-color: #5f5c5c;
+  padding-top: 24px !important;
+  padding-bottom: 8px !important;
+  margin-top: -9px !important;
 }
+
+// .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+//     padding-top: 24px !important;
+//     padding-bottom: 8px !important;
+//     margin-top: -9px !important;
+// }
+//not required end
 
 ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
   background-color: #5f5c5c;

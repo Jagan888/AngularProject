@@ -1,0 +1,52 @@
+<div class="dialog">
+    <!-- <div mat-dialog-title class="row" > -->
+      <h1 mat-dialog-title class="title">Project adding</h1>
+      <div>
+        <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+          <mat-icon class="close" color="black">close</mat-icon>
+        </button>
+      </div>
+    <!-- </div> -->
+    <div mat-dialog-content class="content">
+      <div class="row">
+        <div class="col-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Project name</mat-label>
+            <input matInput  placeholder="Type Project name" />
+          </mat-form-field>
+        </div>
+        <div class="col-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Client name</mat-label>
+          <input matInput  placeholder="Type Cient name" />
+        </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Project team</mat-label>
+          <input matInput />
+          <mat-icon matPrefix>search</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker" />
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="container" class="action">
+        <div mat-dialog-action [align]="'end'">
+          <button mat-raised-button [mat-dialog-close]>Cancel</button>
+          <button mat-raised-button style="margin-left: 18px;" color="primary" routerLink="/project-details" [mat-dialog-close]>Done</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+

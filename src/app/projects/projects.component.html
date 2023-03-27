@@ -5,21 +5,16 @@
       <h3>Projects</h3>
     </div>
     <div class="add-project">
-      <button
-        mat-stroked-button
-        class="add-project-button"
-        (click)="openSddAddEditForm()"
-      >
-        <a routerLink="/project-details">addddddd</a>
-        <mat-icon
+  <button mat-stroked-button class="add-project-button"
+      (click)="openSddAddEditForm()"
+      > <mat-icon
           class="search-icon"
           aria-hidden="false"
           aria-label="sort icon"
-          fontIcon="filter_alt"
+          fontIcon="add"
         >
-        </mat-icon
-        >Add project
-      </button>
+        </mat-icon><span style="color: white; ">Add project</span></button>
+
     </div>
 
     <div class="filter">
@@ -45,7 +40,7 @@
       </button>
     </div>
     <div class="mat-box-new">
-      <mat-form-field>
+      <mat-form-field >
         <mat-label class="sort-label-1">
           <mat-icon
             color="#f1eeee"
@@ -55,7 +50,6 @@
           ></mat-icon>
           Sort by:
         </mat-label>
-
         <mat-label class="sort-label-2">Last edited date descending</mat-label>
         <mat-select></mat-select>
       </mat-form-field>
@@ -67,3 +61,4 @@
   <!-- <app-project-details></app-project-details> -->
   <app-sdd-footer></app-sdd-footer>
 </div>
+

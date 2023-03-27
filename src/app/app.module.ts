@@ -4,7 +4,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './layout/layout.component';
+import { LayoutComponent } from './block/layout/layout.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import{ MatIconModule} from '@angular/material/icon';
 import{MatSelectModule} from '@angular/material/select'
@@ -17,17 +17,20 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog'
 import {MatInputModule} from '@angular/material/input';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
-import { ProjectDetailsComponent } from './project-details/project-details.component'
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 
 import { FormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { SddAddEditComponent } from './sdd-add-edit/sdd-add-edit.component';
+import { SddAddEditComponent } from './shared/sdd-add-edit/sdd-add-edit.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AnalysisScopeComponent } from './analysis-scope/analysis-scope.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { CalculationSettingsComponent } from './calculation-settings/calculation-settings.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { AnalysisScopeComponent } from './analysis-scope/analysis-scope.componen
     ProjectCardsComponent,
     ProjectDetailsComponent,
     SddAddEditComponent,
-    AnalysisScopeComponent
+    AnalysisScopeComponent,
+    DialogComponent,
+    CalculationSettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +63,10 @@ import { AnalysisScopeComponent } from './analysis-scope/analysis-scope.componen
         MatFormFieldModule,
             MatInputModule,
 MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    FormsModule,
+    MatSidenavModule,
+    MatSortModule
 
   ],
   providers: [],

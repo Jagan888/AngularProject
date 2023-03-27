@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { SddAddEditComponent } from '../sdd-add-edit/sdd-add-edit.component';
+import { SddAddEditComponent } from '../shared/sdd-add-edit/sdd-add-edit.component';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -13,7 +13,9 @@ export class ProjectsComponent {
   openSddAddEditForm() : void
   {
     this._matDialog.open(SddAddEditComponent, {
-     // width: '100%',
+    width: '40%',
+    height:'675px',
+    hasBackdrop:false,
     });
   }
 

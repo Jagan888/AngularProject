@@ -1,0 +1,33 @@
+<div class="chk">
+<div>
+  <span class="close-x"  [mat-dialog-close]="true"></span>
+  <mat-icon class ="icon" aria-hidden="false" aria-label="Example home icon">info</mat-icon>
+
+</div>
+
+<div>
+<h1 mat-dialog-title>Are You sure you want to delete the project</h1>
+<mat-dialog-content class="text">
+  <table>
+    <tr>Ford Motor Company risk Analysis will be deleted permanatly with all the included data, you will not be able to restore it.</tr>
+    <hr style="width:100%;text-align:left;margin-left:0">
+
+    <tr><input type="checkbox"  id="accept"
+      heading="I accept"
+      name="accept"
+      value="accept"[(ngModel)]="checked" required
+      #theChkAcceptTerms="ngModel" (ngModelChange)="chkbtn()"><label> I confirm the declaration of the project with all attached data</label></tr>
+    <hr style="width:100%;text-align:left;margin-left:0">
+  </table>
+</mat-dialog-content>
+</div>
+
+<div class="button">
+<mat-dialog-actions>
+  <button mat-raised-button [mat-dialog-close]="true" color="primary" style='background-color: grey;'>Cancel</button>
+
+  <button mat-raised-button [disabled]="theChkAcceptTerms.invalid" [mat-dialog-close]="true" color="primary"style='background-color: orangered;' mat-icon-button.enable="false" (click)="btnClick()">Delete </button>
+  </mat-dialog-actions>
+
+</div>
+</div>
